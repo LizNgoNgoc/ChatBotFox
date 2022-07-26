@@ -1,0 +1,161 @@
+.wrapper{
+	font-family: 'Alegreya', serif;
+	background: url("./images/background.png");
+	font-weight: 500;
+	background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 1024px;
+    height: 100vh;
+    position: relative;
+}
+
+.wrapper:before{
+	content: '';
+	display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
+	z-index: -1;
+}
+
+.title{
+	color: #fff;
+	font-size: 63px;
+	text-align: center;
+	font-weight: 800;
+	letter-spacing: 3.7px;
+    margin: 0;
+    padding: 50px 0 0;
+}
+
+.container{
+    margin: 60px auto 0;
+    width: 1100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+}
+
+.dialog{
+	overflow: scroll;
+}
+
+.chat{
+	background: #fff;
+	width: 780px;
+  	height: 450px;
+  	padding: 36px 12px 23px 20px;
+  	border-radius: 16px;
+  	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image{
+	width: 324px;
+    position: absolute;
+ 	top: -40px;
+    right: 0;
+}
+
+.userAnswer, .foxAnswer{
+	position: relative;
+	display: flex;
+    font-size: 24px;
+}
+
+.userAnswer{
+	margin: 0 30px 14px 20px;
+	padding: 16px 0 0 72px;
+}
+
+.foxAnswer {
+    justify-content: flex-end;
+    color: #83573a;
+    margin: 0 30px 14px 20px;
+    padding: 16px 72px 0 0;
+}
+
+.userAnswer:before{
+	content: '';
+	background: url("images/avatarGirl.png");
+	width: 58px;
+	height: 58px;
+	background-size: cover; 
+	left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.foxAnswer:after{
+	content: '';
+	background: url("images/avatarFox.png");
+	width: 58px;
+	height: 58px;
+	background-size: cover; 
+	right: 0;
+    position: absolute;
+    top: 0;
+}
+
+.message{
+	height: 72px;
+}
+
+.message-container{
+	border-top: 1px solid #ececec;
+}
+
+.input{
+	color: #000;
+	font-size: 24px;
+	line-height: 1.75;
+	border: none;
+	padding: 18px 0 0 7px;
+	width: 71.7%;
+}
+
+.input::placeholder { 
+  color: #999999;
+  opacity: 1; 
+}
+
+.input:-ms-input-placeholder { 
+  color: #999999;
+}
+
+.input::-ms-input-placeholder { 
+  color: #999999;
+}
+
+
+.input:focus{
+	outline: none;
+}
+
+.button{
+	background: #ef803b;
+	border-radius: 16px;
+	color: #fff;
+	font-size: 27px;
+	border: none;
+    padding: 14px 40px;
+    font-weight: 800;
+    border-bottom: 5px solid #d35d29;
+}
+
+.button:hover{
+	background: #a09720;
+	border-bottom: 5px solid #746d10;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.button:focus{
+	outline: none;
+	cursor: pointer;
+}
